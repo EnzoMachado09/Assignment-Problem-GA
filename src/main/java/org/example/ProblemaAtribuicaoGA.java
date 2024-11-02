@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class ProblemaAtribuicaoGA {
     private static final int TAMANHO_POPULACAO = 100;
-    private static final int MAX_GERACOES = 1000; // Aumentado para mais iterações
+    private static final int MAX_GERACOES = 1000;
     private static final double TAXA_MUTACAO = 0.1;
     private static final double TAXA_CROSSOVER = 0.8;
 
