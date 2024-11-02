@@ -12,8 +12,8 @@ public class ProblemaAtribuicaoGA {
     private static final double TAXA_MUTACAO = 0.1;
     private static final double TAXA_CROSSOVER = 0.8;
 
-    private int[][] matrizCusto;
-    private int numTarefas;
+    private final int[][] matrizCusto;
+    private final int numTarefas;
 
     public ProblemaAtribuicaoGA(int[][] matrizCusto) {
         this.matrizCusto = matrizCusto;
@@ -140,7 +140,7 @@ public class ProblemaAtribuicaoGA {
         System.out.print("Sua escolha: ");
         int escolha = scanner.nextInt();
 
-        ProblemaAtribuicaoGA ga = null;
+        ProblemaAtribuicaoGA ga;
 
         Random rand = new Random();
         switch (escolha) {
@@ -179,9 +179,7 @@ public class ProblemaAtribuicaoGA {
                 return;
         }
 
-        if (ga != null) {
             ga.resolver();
-        }
 
         scanner.close();
     }
